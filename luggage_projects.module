@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the luggage_projects feature.
+ */
+
+include_once 'luggage_projects.features.inc';
