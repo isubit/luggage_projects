@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_enable()
+ */
+function luggage_projects_enable() {
+  db_update('system')
+    ->fields(array('weight' => 100000))
+    ->condition('type', 'module')
+    ->condition('name', 'luggage_projects')
+    ->execute();
+}
