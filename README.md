@@ -1,4 +1,3 @@
-luggage_roles
+luggage_projects
 ============
 
-Roles that should be globally available on all production sites.
