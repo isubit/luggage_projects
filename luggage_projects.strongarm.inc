@@ -20,16 +20,16 @@ function luggage_projects_strongarm() {
         'custom_settings' => TRUE,
       ),
       'full' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'rss' => array(
         'custom_settings' => FALSE,
       ),
       'search_index' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'search_result' => array(
-        'custom_settings' => FALSE,
+        'custom_settings' => TRUE,
       ),
       'diff_standard' => array(
         'custom_settings' => FALSE,
@@ -37,23 +37,26 @@ function luggage_projects_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'revision' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '9',
+          'weight' => '12',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '8',
+          'weight' => '11',
         ),
         'redirect' => array(
-          'weight' => '7',
+          'weight' => '10',
         ),
         'xmlsitemap' => array(
-          'weight' => '6',
+          'weight' => '9',
         ),
       ),
       'display' => array(),

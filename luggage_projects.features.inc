@@ -34,5 +34,6 @@ function luggage_projects_node_info() {
       'help' => '',
     ),
   );
+  drupal_alter('node_info', $items);
   return $items;
 }
