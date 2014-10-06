@@ -14,6 +14,7 @@ function luggage_projects_user_default_permissions() {
   $permissions['create project content'] = array(
     'name' => 'create project content',
     'roles' => array(
+      'authenticated user' => 'authenticated user',
       'content editor' => 'content editor',
     ),
     'module' => 'node',
@@ -23,7 +24,7 @@ function luggage_projects_user_default_permissions() {
   $permissions['delete any project content'] = array(
     'name' => 'delete any project content',
     'roles' => array(
-      'content editor' => 'content editor',
+      'content publisher' => 'content publisher',
     ),
     'module' => 'node',
   );
@@ -31,7 +32,9 @@ function luggage_projects_user_default_permissions() {
   // Exported permission: 'delete own project content'.
   $permissions['delete own project content'] = array(
     'name' => 'delete own project content',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'node',
   );
 
@@ -40,6 +43,7 @@ function luggage_projects_user_default_permissions() {
     'name' => 'edit any project content',
     'roles' => array(
       'content editor' => 'content editor',
+      'content publisher' => 'content publisher',
     ),
     'module' => 'node',
   );
@@ -47,7 +51,9 @@ function luggage_projects_user_default_permissions() {
   // Exported permission: 'edit own project content'.
   $permissions['edit own project content'] = array(
     'name' => 'edit own project content',
-    'roles' => array(),
+    'roles' => array(
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'node',
   );
 
