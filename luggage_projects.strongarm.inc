@@ -108,5 +108,12 @@ function luggage_projects_strongarm() {
   $strongarm->value = 'projects/[node:title]';
   $export['pathauto_node_project_pattern'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'publishcontent_project';
+  $strongarm->value = 1;
+  $export['publishcontent_project'] = $strongarm;
+
   return $export;
 }
