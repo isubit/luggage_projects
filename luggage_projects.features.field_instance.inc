@@ -508,7 +508,7 @@ function luggage_projects_field_default_field_instances() {
       'settings' => array(
         'insert' => 1,
         'insert_absolute' => 0,
-        'insert_class' => '',
+        'insert_class' => 'insert-default-image-styling',
         'insert_default' => 'auto',
         'insert_styles' => array(
           'auto' => 'auto',
