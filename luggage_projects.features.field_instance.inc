@@ -522,7 +522,7 @@ function luggage_projects_field_default_field_instances() {
           'image_thumbnail' => 0,
           'link' => 0,
         ),
-        'insert_width' => '',
+        'insert_width' => 675,
         'preview_image_style' => 'thumbnail',
         'progress_indicator' => 'throbber',
       ),
