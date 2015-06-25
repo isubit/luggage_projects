@@ -24,7 +24,7 @@ function luggage_projects_user_default_permissions() {
   $permissions['delete any project content'] = array(
     'name' => 'delete any project content',
     'roles' => array(
-      'content publisher' => 'content publisher',
+      'content editor' => 'content editor',
     ),
     'module' => 'node',
   );
@@ -43,7 +43,6 @@ function luggage_projects_user_default_permissions() {
     'name' => 'edit any project content',
     'roles' => array(
       'content editor' => 'content editor',
-      'content publisher' => 'content publisher',
     ),
     'module' => 'node',
   );
