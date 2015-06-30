@@ -24,7 +24,7 @@ function luggage_projects_menu_default_menu_links() {
     'external' => 0,
     'has_children' => 0,
     'expanded' => 0,
-    'weight' => -45,
+    'weight' => -33,
     'customized' => 1,
   );
 

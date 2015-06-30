@@ -39,7 +39,6 @@ features[field_instance][] = node-project-field_project_image
 features[field_instance][] = node-project-field_project_number
 features[field_instance][] = node-project-field_project_order
 features[field_instance][] = node-project-field_tags
-features[menu_links][] = main-menu_projects:projects
 features[node][] = project
 features[user_permission][] = create project content
 features[user_permission][] = delete any project content
