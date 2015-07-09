@@ -655,6 +655,63 @@ function luggage_projects_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-project-field_project_type'
+  $field_instances['node-project-field_project_type'] = array(
+    'bundle' => 'project',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'A vocabulary that is used for sorting projects (project completion status, for example)',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 2,
+      ),
+      'full' => array(
+        'label' => 'inline',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 2,
+      ),
+      'search_index' => array(
+        'label' => 'inline',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 2,
+      ),
+      'search_result' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_project_type',
+    'label' => 'Project Type',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_select',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'node-project-field_tags'
   $field_instances['node-project-field_tags'] = array(
     'bundle' => 'project',
@@ -720,6 +777,7 @@ function luggage_projects_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('A vocabulary that is used for sorting projects (project completion status, for example)');
   t('Add Tags to help users find related content. Enter Tags as a comma-delimited string: baseball, bat, glove, ...');
   t('Award Amount');
   t('Award Number');
@@ -730,6 +788,7 @@ function luggage_projects_field_default_field_instances() {
   t('Funding Organization');
   t('Images');
   t('Order');
+  t('Project Type');
   t('Tags');
   t('This field is a custom weighting; its value will be used in views.');
 
