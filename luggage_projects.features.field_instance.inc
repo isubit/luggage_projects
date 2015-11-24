@@ -123,7 +123,7 @@ function luggage_projects_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_category',
     'label' => 'Category',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -228,9 +228,8 @@ function luggage_projects_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'inline',
-        'module' => 'link',
         'settings' => array(),
-        'type' => 'link_default',
+        'type' => 'hidden',
         'weight' => 0,
       ),
       'search_index' => array(
@@ -241,8 +240,9 @@ function luggage_projects_field_default_field_instances() {
       ),
       'search_result' => array(
         'label' => 'above',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'link_default',
         'weight' => 0,
       ),
       'teaser' => array(
@@ -394,8 +394,8 @@ function luggage_projects_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
+          'show_remaining_days' => FALSE,          
         ),
-        'show_remaining_days' => FALSE,
         'type' => 'date_default',
         'weight' => 3,
       ),
@@ -937,8 +937,8 @@ function luggage_projects_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('A vocabulary that is used for sorting projects (project completion status, for example)');
   t('Add Tags to help users find related content. Enter Tags as a comma-delimited string: baseball, bat, glove, ...');
-  t('Award Amount');
   t('Alternate URL');
+  t('Award Amount');
   t('Award Number');
   t('Body');
   t('Category');
