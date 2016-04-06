@@ -36,7 +36,7 @@ function luggage_projects_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'search_result' => array(
         'label' => 'hidden',
@@ -103,7 +103,7 @@ function luggage_projects_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'search_result' => array(
         'label' => 'inline',
@@ -123,7 +123,7 @@ function luggage_projects_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_category',
     'label' => 'Category',
-    'required' => 1,
+    'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
     ),
@@ -162,7 +162,7 @@ function luggage_projects_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -228,18 +228,20 @@ function luggage_projects_field_default_field_instances() {
       ),
       'full' => array(
         'label' => 'inline',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'link_url',
         'weight' => 0,
       ),
       'search_index' => array(
         'label' => 'above',
+        'module' => 'link',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'link_default',
         'weight' => 0,
       ),
       'search_result' => array(
-        'label' => 'above',
+        'label' => 'inline',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
@@ -329,7 +331,7 @@ function luggage_projects_field_default_field_instances() {
           'thousand_separator' => ',',
         ),
         'type' => 'number_decimal',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -394,7 +396,7 @@ function luggage_projects_field_default_field_instances() {
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
-          'show_remaining_days' => FALSE,          
+          'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
         'weight' => 3,
@@ -411,7 +413,7 @@ function luggage_projects_field_default_field_instances() {
           'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -475,7 +477,7 @@ function luggage_projects_field_default_field_instances() {
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -551,7 +553,7 @@ function luggage_projects_field_default_field_instances() {
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -636,7 +638,7 @@ function luggage_projects_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -698,7 +700,7 @@ function luggage_projects_field_default_field_instances() {
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -760,7 +762,7 @@ function luggage_projects_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'search_result' => array(
         'label' => 'above',
@@ -837,7 +839,7 @@ function luggage_projects_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'search_result' => array(
         'label' => 'inline',
@@ -896,7 +898,7 @@ function luggage_projects_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'search_result' => array(
         'label' => 'inline',
