@@ -58,5 +58,6 @@ features[variable][] = node_preview_project
 features[variable][] = node_submitted_project
 features[variable][] = pathauto_node_project_pattern
 features[variable][] = publishcontent_project
+features[variable][] = read_more_project_view_modes
 features[views_view][] = projects
 github = https://raw.github.com/isubit/luggage_projects/master/luggage_projects.info
