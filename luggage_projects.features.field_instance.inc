@@ -493,22 +493,15 @@ function luggage_projects_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'alt_field' => 1,
-<<<<<<< Updated upstream
-=======
       'alt_field_required' => 1,
->>>>>>> Stashed changes
       'default_image' => 0,
       'file_directory' => 'project/images',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
       'max_resolution' => '',
       'min_resolution' => '',
-<<<<<<< Updated upstream
       'title_field' => 1,
-=======
-      'title_field' => 0,
       'title_field_required' => 0,
->>>>>>> Stashed changes
       'user_register_form' => FALSE,
     ),
     'widget' => array(
