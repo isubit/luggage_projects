@@ -217,7 +217,7 @@ function luggage_projects_field_default_field_instances() {
     'bundle' => 'project',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'An alternate URL should be used when you are adding a project that has pre-existing information on another website (e.g. http://www.news.iastate.edu/item).',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -940,6 +940,7 @@ function luggage_projects_field_default_field_instances() {
   t('A vocabulary that is used for sorting projects (project completion status, for example)');
   t('Add Tags to help users find related content. Enter Tags as a comma-delimited string: baseball, bat, glove, ...');
   t('Alternate URL');
+  t('An alternate URL should be used when you are adding a project that has pre-existing information on another website (e.g. http://www.news.iastate.edu/item).');
   t('Award Amount');
   t('Award Number');
   t('Body');
