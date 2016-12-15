@@ -14,17 +14,3 @@ function luggage_projects_update_projects_alter(&$projects) {
   unset($projects['luggage_projects']);
 }
 
-function luggage_projects_views_pre_render(&$view) {
-  if($view) {
-
-  }
-}
-
-function luggage_projects_preprocess_page(&$vars) {
-  $arg1 = arg(1);
-  $arg2 = arg(2);
-
-  if(!empty($vars['node']) && $vars['node']->type == 'project' && arg(2) == null) {
-    drupal_add_css(drupal_get_path('module', 'luggage_projects') . '/css/luggage_projects.css');
-  }
-}
