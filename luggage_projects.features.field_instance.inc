@@ -451,7 +451,7 @@ function luggage_projects_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_text',
-      'weight' => 15,
+      'weight' => 12,
     ),
   );
 
@@ -732,7 +732,7 @@ function luggage_projects_field_default_field_instances() {
       'module' => 'number',
       'settings' => array(),
       'type' => 'number',
-      'weight' => 16,
+      'weight' => 13,
     ),
   );
 
