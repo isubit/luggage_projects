@@ -10,7 +10,7 @@
 function luggage_projects_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-project-body'
+  // Exported field_instance: 'node-project-body'.
   $field_instances['node-project-body'] = array(
     'bundle' => 'project',
     'default_value' => NULL,
@@ -22,6 +22,15 @@ function luggage_projects_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
+        'weight' => 0,
+      ),
+      'frontpanel' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'type' => 'text_summary_or_trimmed',
         'weight' => 0,
       ),
       'full' => array(
@@ -77,7 +86,7 @@ function luggage_projects_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-project-field_category'
+  // Exported field_instance: 'node-project-field_category'.
   $field_instances['node-project-field_category'] = array(
     'bundle' => 'project',
     'default_value' => NULL,
@@ -89,6 +98,12 @@ function luggage_projects_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
+        'weight' => 7,
+      ),
+      'frontpanel' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 7,
       ),
       'full' => array(
@@ -135,7 +150,7 @@ function luggage_projects_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-project-field_funding_organization'
+  // Exported field_instance: 'node-project-field_funding_organization'.
   $field_instances['node-project-field_funding_organization'] = array(
     'bundle' => 'project',
     'default_value' => NULL,
@@ -147,6 +162,12 @@ function luggage_projects_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
+        'weight' => 2,
+      ),
+      'frontpanel' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 2,
       ),
       'full' => array(
@@ -211,7 +232,7 @@ function luggage_projects_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-project-field_project_alternate_url'
+  // Exported field_instance: 'node-project-field_project_alternate_url'.
   $field_instances['node-project-field_project_alternate_url'] = array(
     'bundle' => 'project',
     'default_value' => NULL,
@@ -223,6 +244,12 @@ function luggage_projects_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
+        'weight' => 1,
+      ),
+      'frontpanel' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 1,
       ),
       'full' => array(
@@ -289,7 +316,7 @@ function luggage_projects_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-project-field_project_award_amount'
+  // Exported field_instance: 'node-project-field_project_award_amount'.
   $field_instances['node-project-field_project_award_amount'] = array(
     'bundle' => 'project',
     'default_value' => NULL,
@@ -306,6 +333,12 @@ function luggage_projects_field_default_field_instances() {
           'thousand_separator' => ',',
         ),
         'type' => 'number_decimal',
+        'weight' => 5,
+      ),
+      'frontpanel' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 5,
       ),
       'full' => array(
@@ -366,7 +399,7 @@ function luggage_projects_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-project-field_project_duration'
+  // Exported field_instance: 'node-project-field_project_duration'.
   $field_instances['node-project-field_project_duration'] = array(
     'bundle' => 'project',
     'deleted' => 0,
@@ -384,6 +417,12 @@ function luggage_projects_field_default_field_instances() {
           'show_remaining_days' => FALSE,
         ),
         'type' => 'date_default',
+        'weight' => 4,
+      ),
+      'frontpanel' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 4,
       ),
       'full' => array(
@@ -454,13 +493,19 @@ function luggage_projects_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-project-field_project_files'
+  // Exported field_instance: 'node-project-field_project_files'.
   $field_instances['node-project-field_project_files'] = array(
     'bundle' => 'project',
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 11,
+      ),
+      'frontpanel' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -530,13 +575,19 @@ function luggage_projects_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-project-field_project_image'
+  // Exported field_instance: 'node-project-field_project_image'.
   $field_instances['node-project-field_project_image'] = array(
     'bundle' => 'project',
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 10,
+      ),
+      'frontpanel' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -611,7 +662,7 @@ function luggage_projects_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-project-field_project_number'
+  // Exported field_instance: 'node-project-field_project_number'.
   $field_instances['node-project-field_project_number'] = array(
     'bundle' => 'project',
     'default_value' => NULL,
@@ -623,6 +674,12 @@ function luggage_projects_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
+        'weight' => 6,
+      ),
+      'frontpanel' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 6,
       ),
       'full' => array(
@@ -672,7 +729,7 @@ function luggage_projects_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-project-field_project_order'
+  // Exported field_instance: 'node-project-field_project_order'.
   $field_instances['node-project-field_project_order'] = array(
     'bundle' => 'project',
     'default_value' => array(
@@ -684,6 +741,12 @@ function luggage_projects_field_default_field_instances() {
     'description' => 'This field is a custom weighting; its value will be used in views.',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 12,
+      ),
+      'frontpanel' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -735,7 +798,7 @@ function luggage_projects_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-project-field_project_pi'
+  // Exported field_instance: 'node-project-field_project_pi'.
   $field_instances['node-project-field_project_pi'] = array(
     'bundle' => 'project',
     'default_value' => NULL,
@@ -747,6 +810,12 @@ function luggage_projects_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
+        'weight' => 8,
+      ),
+      'frontpanel' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 8,
       ),
       'full' => array(
@@ -812,7 +881,7 @@ function luggage_projects_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-project-field_project_type'
+  // Exported field_instance: 'node-project-field_project_type'.
   $field_instances['node-project-field_project_type'] = array(
     'bundle' => 'project',
     'default_value' => NULL,
@@ -824,6 +893,12 @@ function luggage_projects_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
+        'weight' => 3,
+      ),
+      'frontpanel' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 3,
       ),
       'full' => array(
@@ -870,7 +945,7 @@ function luggage_projects_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-project-field_tags'
+  // Exported field_instance: 'node-project-field_tags'.
   $field_instances['node-project-field_tags'] = array(
     'bundle' => 'project',
     'default_value' => NULL,
@@ -882,6 +957,12 @@ function luggage_projects_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_link',
+        'weight' => 9,
+      ),
+      'frontpanel' => array(
+        'label' => 'inline',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 9,
       ),
       'full' => array(
