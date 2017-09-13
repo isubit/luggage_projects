@@ -128,9 +128,8 @@ function luggage_projects_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'inline',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 1,
       ),
     ),
@@ -923,9 +922,8 @@ function luggage_projects_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'inline',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 2,
       ),
     ),
@@ -987,9 +985,8 @@ function luggage_projects_field_default_field_instances() {
       ),
       'teaser' => array(
         'label' => 'inline',
-        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hidden',
         'weight' => 3,
       ),
     ),
