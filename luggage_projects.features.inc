@@ -28,7 +28,7 @@ function luggage_projects_node_info() {
     'project' => array(
       'name' => t('Project'),
       'base' => 'node_content',
-      'description' => t('A project'),
+      'description' => t('Document completed or on-going projects, including Principal Investigators, project dates, funding information, and detailed descriptions.'),
       'has_title' => '1',
       'title_label' => t('Title'),
       'help' => '',
